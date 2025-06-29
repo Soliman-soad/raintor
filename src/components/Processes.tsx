@@ -38,13 +38,30 @@ const Processes = () => {
       {/* card */}
       <div className="grid grid-cols-2 gap-10 mt-20">
         {processes.map((process, index) => (
-          <div key={index} className=" group p-10 rounded-[40px] hover:rotate-12 transition-all duration-300 cursor-pointer hover:bg-[#C5FF41] hover:text-black">
+          <div
+            key={index}
+            className=" group p-10 rounded-[40px] hover:rotate-12 transition-all duration-300 cursor-pointer hover:bg-[#C5FF41] hover:text-black"
+          >
             <div className="flex items-center justify-between">
-            <h2 className="text-xl bg-[#C5FFEE] text-black px-4 py-2 rounded-full inline-block group-hover:bg-black group-hover:text-white">{process.title}</h2>
-            <h4 className="flex gap-1">
-                <Arrow variant="arrow" width={22} height={15} className="mt-0.5"/>
+              <h2 className="text-xl bg-[#C5FFEE] text-black px-4 py-2 rounded-full inline-block group-hover:bg-black group-hover:text-white">
+                {process.title}
+              </h2>
+              <h4 className="flex gap-1">
+                <Arrow
+                  variant="white-arrow"
+                  width={22}
+                  height={15}
+                  className="mb-2 block group-hover:hidden rotate-180"
+                />
+
+                <Arrow
+                  variant="arrow"
+                  width={22}
+                  height={15}
+                  className="mt-0.5 hidden group-hover:block"
+                />
                 <span className="text-base underline">Read More</span>
-            </h4>
+              </h4>
             </div>
             <p className="text-lg mt-4">{process.description}</p>
           </div>

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1440px] mx-auto mt-44 flex justify-between items-center gap-6">
+    <div className="max-w-[1440px] mx-auto py-44 flex justify-between items-center gap-6">
       <div className="w-7/12">
         <FeatureHeader variant="black" title="Contact" position="start" />
         <div>

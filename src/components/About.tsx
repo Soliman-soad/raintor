@@ -5,7 +5,7 @@ import FeatureHeader from "./common/FeatureHeader";
 
 const About = () => {
   return (
-    <div className="max-w-[1314px] mt-44 mx-auto">
+    <div className="max-w-[1314px] pt-44 mx-auto">
       {/* component feature name */}
       <FeatureHeader variant="black" title="About" position="end" />
 

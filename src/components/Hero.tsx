@@ -5,6 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="max-w-[1314px] mx-auto mt-44">
+     
       <div className="text-[78px] font-bold">
         <h1>
           Trusted{" "}
