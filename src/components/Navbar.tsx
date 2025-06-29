@@ -10,10 +10,10 @@ const Navbar = () => {
         devlop.me
       </div>
       <div className="flex items-center gap-8 text-black">
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Portfolio</Link>
-        <Link href="/contact">Blog</Link>
+        <Link href="/" className="hover:bg-black hover:text-white p-2 rounded-xl duration-200 ease-in-out transition-all">Home</Link>
+        <Link href="/" className="hover:bg-black hover:text-white p-2 rounded-xl duration-300 ease-in-out transition-all">About</Link>
+        <Link href="/" className="hover:bg-black hover:text-white p-2 rounded-xl duration-300 ease-in-out transition-all">Portfolio</Link>
+        <Link href="/" className="hover:bg-black hover:text-white p-2 rounded-xl duration-300 ease-in-out transition-all">Blog</Link>
         <div className="ml-10">
           <SwapButton padding={4} text="Start Project" icon="arrow" />
         </div>

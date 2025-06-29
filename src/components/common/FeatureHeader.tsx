@@ -14,7 +14,7 @@ const FeatureHeader = ({
     <div className={`flex items-center ${position === "start" ? "justify-start" : "justify-end"}`}>
       <Arrow
         variant={variant === "white" ? "white-arrow" : "arrow"}
-        className={` border rounded-full inline-flex w-10 h-10 items-center justify-center ${variant === "white" ? "-rotate-90" : "rotate-90"}`}
+        className={`border rounded-full inline-flex w-10 h-10 items-center justify-center ${variant === "white" ? "-rotate-90" : "rotate-90"}`}
         width={12}
         height={12}
       />

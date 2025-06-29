@@ -12,9 +12,10 @@ const SwapButton = ({
 }) => {
   return (
     <button
-      className={`pr-${padding} py-2 flex items-center gap-2 border rounded-full`}
+      className={`pr-${padding} py-2 flex items-center gap-2 border rounded-full group`}
     >
-      <div className="rounded-full border w-9.5 h-9.5 flex items-center justify-center">
+      <div className="rounded-full border w-9.5 h-9.5 flex items-center justify-center group-hover:translate-x-2 transition-all duration-300">
+        {" "}
         <Image src={`/icons/${icon}.svg`} alt={icon} width={19} height={19} />
       </div>
       {text}

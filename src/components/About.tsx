@@ -11,6 +11,7 @@ const About = () => {
 
       {/* header */}
       <div className="text-[78px] font-bold text-center mt-20">
+        
         <h1>
           I've been
           <span className="bg-black text-white px-3 rounded-xl">

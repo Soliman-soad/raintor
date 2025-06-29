@@ -1,30 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SwapButton from "./common/SwapButton";
 import Image from "next/image";
 
 const Hero = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setShow(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <div className="max-w-[1314px] mx-auto mt-44">
-     
+    <div className="max-w-[1314px] mx-auto mt-28">
       <div className="text-[78px] font-bold">
         <h1>
           Trusted{" "}
-          <span className="bg-black text-white px-3 rounded-xl">Partner</span>{" "}
+          <span className="bg-black text-white px-3 rounded-xl">
+            <span
+              className={`${
+                show ? "translate-y-0 opacity-100" : "-translate-y-6 opacity-20"
+              } inline-block transition-all duration-700 ease-in-out`}
+            >
+              Partner
+            </span>
+          </span>{" "}
           for{" "}
         </h1>
         <h1 className="mt-8">
           Your Website{" "}
-          <span className="bg-black text-white px-3 rounded-xl"> Develop.</span>
+          <span className="bg-black text-white px-3 rounded-xl">
+            <span
+              className={`${
+                show ? "translate-y-0 opacity-100" : "translate-y-6 opacity-20"
+              } transition-all duration-700 ease-in-out inline-block`}
+            >
+              Develop.
+            </span>
+          </span>
         </h1>
       </div>
 
       <div className="flex gap-[220px] items-center mt-20">
-        <div className="flex gap-16">
+        <div 
+        className={`${
+          show ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+        }  gap-16 transition-all duration-700 ease-in-out inline-flex`}
+        >
           <h1 className="rotate-90 inline-block -ml-[90px]">@williamrey</h1>
           <div className="flex justify-start items-center gap-4 flex-col-reverse">
-            <div
-            className="ml-4 border-l border-2 h-[45px] inline"
-            />
+            <div className="ml-4 border-l border-2 h-[45px] inline" />
             <Image
               src="/icons/facebook.svg"
               alt="facebook"
