@@ -26,7 +26,7 @@ const Processes = () => {
     },
   ];
   return (
-    <div className="max-w-[1440px] mt-44 mx-auto text-white bg-black py-20 px-10 rounded-[40px]">
+    <div className="max-w-[1440px] mx-auto text-white bg-black py-20 px-10 rounded-[40px]">
       {/* header */}
       <div className="flex items-center text-center">
         <FeatureHeader variant="white" title="Work Process" position="start" />
