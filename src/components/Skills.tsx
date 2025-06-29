@@ -25,20 +25,20 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="max-w-[1440px] mt-44 mx-auto text-white bg-black py-20 px-10 rounded-[40px]">
+    <div className="max-w-[1440px] mt-20 md:mt-44 mx-auto text-white bg-black py-20 px-10 md:rounded-[40px]">
       {/* component feature name */}
       <FeatureHeader variant="white" title="Why Choose me" position="start" />
 
       {/* header */}
-      <div className="flex gap-16 items-center mt-10">
-        <div className="w-1/2">
+      <div className="md:flex gap-16 items-center mt-10">
+        <div className="md:w-1/2">
           <div>
-            <h1 className="text-[58px] font-bold">
+            <h1 className="text-4xl md:text-[58px] font-bold">
               My Extensive List of Skills
             </h1>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2 mt-10 md:mt-0">
           <p className="text-right">
             Building the worlds best marketing Your trusted partner for
             strategy, design, and dev.
@@ -61,7 +61,7 @@ const Skills = () => {
       </div>
 
       {/* card */}
-      <div className="flex gap-10 mt-20">
+      <div className="flex flex-col md:flex-row gap-10 mt-20">
         {skills.map((skill, index) => (
           <div
             key={index}
