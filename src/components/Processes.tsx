@@ -26,17 +26,17 @@ const Processes = () => {
     },
   ];
   return (
-    <div className="max-w-[1440px] mx-auto text-white bg-black py-20 px-10 rounded-[40px]">
+    <div className="max-w-[1440px] mx-auto text-white bg-black py-10 md:py-20 px-4 md:px-10 md:rounded-[40px]">
       {/* header */}
-      <div className="flex items-center text-center">
+      <div className="md:flex items-center text-center">
         <FeatureHeader variant="white" title="Work Process" position="start" />
-        <h1 className="text-[58px] font-bold text-center w-3/4">
+        <h1 className="text-4xl md:text-[58px] font-bold text-center md:w-3/4 mt-4 md:mt-0">
           My Work Process
         </h1>
       </div>
 
       {/* card */}
-      <div className="grid grid-cols-2 gap-10 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-20">
         {processes.map((process, index) => (
           <div
             key={index}
